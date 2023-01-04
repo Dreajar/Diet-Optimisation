@@ -18,7 +18,7 @@ Whereas unconstrained optimisation algorithms usually start from some initial po
 
 Following linear programming (LP) terminology, we shall call such the initial search a _Phase 1_ procedure and the process of finding an optimal point from the initial solution a _Phase 2_ procedure.
 
-A major category of algorithms is formed by the _barrier and penalty function methods_. Here I shall briefly discuss the principle underlying the barrier function methods. Consider the convex programming problem $minimize_{x∈R^n} f(x)$, with constraints $g_i(**x**)<=0, i = 1,..., m$. The idea is to convert this problem into a corresponding unconstrained problem with an optimal solution near that of the original problem.
+A major category of algorithms is formed by the _barrier and penalty function methods_. Here I shall briefly discuss the principle underlying the barrier function methods. Consider the convex programming problem $minimize_{x∈R^n} f(x)$, with constraints $g_i{(**x**)}<=0, i = 1,..., m$. The idea is to convert this problem into a corresponding unconstrained problem with an optimal solution near that of the original problem.
 
 One method of doing so is the interior point (IP) method, pioneered by Anthony V. Fiacco and Garth P. McCormick in the early 1960s. The basis of IP method restricts the constraints into the objective function by creating a barrier function. This limits potential solutions to iterate in only the feasible region, resulting in a much more efficient algorithm with regards to time complexity.
 
