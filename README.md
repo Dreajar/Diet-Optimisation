@@ -20,7 +20,7 @@ Following linear programming (LP) terminology, we shall call such the initial se
 
 A major category of algorithms is formed by the _barrier and penalty function methods_. Here I shall briefly discuss the principle underlying the barrier function methods. Consider the convex programming problem 
 ```math
-minimize_{x∈R^n} f(x), \\
+minimize_{x∈R^n} f(x), \\\
 g_i(x)\le0, i = 1,..., m
 ```
 The idea is to convert this problem into a corresponding unconstrained problem with an optimal solution near that of the original problem.
@@ -31,7 +31,7 @@ To ensure the program remains within the feasible region, a perturbation factor,
 
 In this project, the barrier function used is defined by 
 ```math
-B(x, r)=f(x)-r\sum_{i=1}^m 1/g_i(x)$. 
+B(x, r)=f(x)-r\sum_{i=1}^m \frac{1}{g_i(x)}. 
 ```
 The terms $-r/g_i(**x**)$ are called the _boundary repulsion_ terms and force $**x**$ to stay within the feasible region so that we can use unconstrained optimisation techniques.
 
