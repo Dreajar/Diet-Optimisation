@@ -15,22 +15,23 @@ Why did I start this project?
 
 Simplify nonlinear constrained optimization problem using barrier methods (copy book)
 
-Let $g^((k))=∇f(x^((k) ) ),F^((k) )=∇^2 f(x^((k) ))$
-- Gradient method: $x^((k+1) )=x^((k) )-α_k g^((k))$
+Let $g^((k))=∇f(x^(k)),F^(k)=∇^2 f(x^(k))$
+- Gradient method: $x^(k+1)=x^(k)-α_k g^(k)$
     - Choice of α_k: fixed, exact line search, or backtracking line search
     - Pros: simple
     - Cons: no use of 2nd order information, relatively slow progress
-- Newton-Ralphson method: $x^((k+1) )=x^((k) )-(F^((k) ) )^(-1) g^((k) )$
+- Newton-Ralphson method: $x^(k+1)=x^(k)-(F^(k))^(-1) g^(k)$
     - Pros: 2nd order information, 1-step for quadratic function, fast convergence near solution
-    - Cons: forming and computing $(F^((k) ) )^(-1)$ is expensive, need modifications if $(F^((k) ))$ is not positive definite, e.g., (the 2 methods)
-- Borzilai-Borwein (BB) method: choose $α_k$ such that $-α_k g^((k) )≈d_newon^((k) )$
-- 
-Summary of BB method 
-	Copy into github
-Results
+    - Cons: forming and computing $(F^(k))^(-1)$ is expensive, need modifications if $(F^(k))$ is not positive definite, e.g., (the 2 methods)
+- Borzilai-Borwein (BB) method: choose $α_k$ such that $-α_k g^(k)≈d_newon^(k)$
+
+# Summary of BB method 
+Copy into github
+
+# Results
 
 
-Extensions
+# Extensions
 	Implement webscraper
 	Create safeguard
 	Line search that permits temporary growth but enforces overall descent of the function value, i.e., it can jump out of a local minimum
