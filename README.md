@@ -59,7 +59,10 @@ Let $g^({(k)})=∇f(x^{(k)}),F^{(k)}=∇^2 f(x^{(k)})$
     - Cons: no convergence guarantee for smooth convex problems
 
 # Summary of BB method 
-Define: $s^{(k-1)}:=x^{(k)}-x^{(k-1)}, y:=g^{(k)}-g^{(k-1)}, \alpha_k^1:=\frac{s^{(k-1)}^Ts^{(k-1)}}{s^{(k-1)}^Ty^{(k-1)}|
+Define:
+```math
+s^{(k-1)}:=x^{(k)}-x^{(k-1)}, y:=g^{(k)}-g^{(k-1)}, \alpha_k^1:=\frac{s^{(k-1)}^Ts^{(k-1)}}{s^{(k-1)}^Ty^{(k-1)}}
+```
 
 # Results
 
