@@ -72,7 +72,7 @@ y^{(k-1)}:=g^{(k)}-g^{(k-1)}
 \alpha_k^1:=\frac{   {(s^{(k-1)})}^T s^{(k-1)}} {{(s^{(k-1)})}^T y^{(k-1)}    }
 ```
 
-At $k=0$, $x^{(k-1)}, g^{(k-1)} (and thus s^{(k-1)}, y^{(k-1)}$ are undefined, so we apply 1 iteration of the standard gradient descent.
+At $k=0$, $x^{(k-1)}, g^{(k-1)}$ (and thus $s^{(k-1)}, y^{(k-1)}$) are undefined, so we apply 1 iteration of the standard gradient descent.  
 Then, we switch to the BB method at $k=1$
 
 # Results
