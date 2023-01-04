@@ -24,7 +24,7 @@ One method of doing so is the interior point (IP) method, pioneered by Anthony V
 
 To ensure the program remains within the feasible region, a perturbation factor, $r$, is added to "penalize" close approaches to the boundaries. This approach is analogous to the use of an invisible fence to keep dogs in an unfenced yard. As the dog moves closer to the boundaries, the more shock he will feel. In the case of the IP method, the amount of shock is determined by $r$. A large value of $r$ gives the analytic center of the feasible region. As $r$ decreases and approaches 0, the optimal value is calculated by tracing out a central path.
 
-In this project, the barrier function used is defined by $B(**x**, r) = f(**x**) - r\sum_{i=1)^m 1 / g_i(**x**)$. The terms $- r / g_i(**x**)$ are called the _boundary repulsion_ terms and force $**x**$ to stay within the feasible region so that we can use unconstrained optimisation techniques.
+In this project, the barrier function used is defined by $B(**x**, r) = f(**x**) - r\sum_{i=1}^m 1 / g_i(**x**)$. The terms $- r / g_i(**x**)$ are called the _boundary repulsion_ terms and force $**x**$ to stay within the feasible region so that we can use unconstrained optimisation techniques.
 
 ## Steps for finding an optimal point
 1. We start with an initial interior feasible point $**x**^0$ and set $k:=1$.
