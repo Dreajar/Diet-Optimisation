@@ -36,8 +36,8 @@ B(x, r)=f(x)-r\sum_{i=1}^m \frac{1}{g_i(x)}.
 The terms $\frac{-r}{g_i(x)}$ are called the _boundary repulsion_ terms and force $x$ to stay within the feasible region so that we can use unconstrained optimisation techniques.
 
 ## Steps for finding an optimal point
-1. We start with an initial interior feasible point $**x**^0$ and set $k:=1$.
-2. We use any unconstrained optimisation technique to find the minimum of the barrier function $B(**x**, r_k) = f(**x**) - r_k\sum_{i=1)^m 1 / g_i(**x**)
+1. We start with an initial interior feasible point $x^0$ and set $k:=1$.
+2. We use any unconstrained optimisation technique to find the minimum of the barrier function $B(x, r_k) = f(x) - r_k\sum_{i=1}^m \frac{1}{g_i(x)}
 3. Vary $r_k$, e.g., $r_k = 10^{4-k}$ and repeat the process until the current solution satisfies some stop criterion
 
 However, with regards to Step 2, which optimisation technique should we choose?
