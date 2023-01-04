@@ -61,7 +61,13 @@ Let $g^({(k)})=∇f(x^{(k)}),F^{(k)}=∇^2 f(x^{(k)})$
 # Summary of BB method 
 Define:
 ```math
-s^{(k-1)}:=x^{(k)}-x^{(k-1)}, y:=g^{(k)}-g^{(k-1)}, \alpha_k^1:=\frac{s^{(k-1)}^Ts^{(k-1)}}{s^{(k-1)}^Ty^{(k-1)}}
+s^{(k-1)}:=x^{(k)}-x^{(k-1)}
+```
+```math
+y:=g^{(k)}-g^{(k-1)}
+```
+```math
+\alpha_k^1:=\frac{s^{(k-1)}^Ts^{(k-1)}}{s^{(k-1)}^Ty^{(k-1)}}
 ```
 
 # Results
