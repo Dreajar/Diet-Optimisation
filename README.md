@@ -33,7 +33,7 @@ In this project, the barrier function used is defined by
 ```math
 B(x, r)=f(x)-r\sum_{i=1}^m \frac{1}{g_i(x)}. 
 ```
-The terms $\frac{-r}{g_i(**x**)}$ are called the _boundary repulsion_ terms and force $**x**$ to stay within the feasible region so that we can use unconstrained optimisation techniques.
+The terms $\frac{-r}{g_i(x)}$ are called the _boundary repulsion_ terms and force $x$ to stay within the feasible region so that we can use unconstrained optimisation techniques.
 
 ## Steps for finding an optimal point
 1. We start with an initial interior feasible point $**x**^0$ and set $k:=1$.
