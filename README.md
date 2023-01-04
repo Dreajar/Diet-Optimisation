@@ -14,6 +14,15 @@ $minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth functi
 
 # Methodology
 
+Whereas unconstrained optimisation algorithms usually start from some initial point, the situation differs in the constrained case. Most methods require an initial solution that is feasible, i.e., one that satisfies all given constraints. Such an initial point may be hard to find; furthermore, there may exist no feasible points. Thus, a number of methods require a preliminary search method that finds an initial feasible solution point, from which we can then optimise the solution.
+
+Following linear programming (LP) terminology, we shall call such the initial search a _Phase 1_ procedure and the process of finding an optimal point from the initial solution a _Phase 2_ procedure.
+
+A major category of algorithms is formed by the _barrier and penalty function methods_. Here I shall briefly discuss the principle underlying the barrier function methods. The barrier function method (also called the interior point (IP) method) for nonlinear programming was pioneered by Anthony V. Fiacco and Garth P. McCormick in the early 1960s. The basis of IP method restricts the constraints into the objective function by creating a barrier function. This limits potential solutions to iterate in only the feasible region, resulting in a much more efficient algorithm with regards to time complexity.
+
+To ensure the program remains within the feasible region, a perturbation factor, $\mu$, is added to "penalize" close approaches to the boundaries. This approach is analogous to the use of an invisible fence to keep dogs in an unfenced yard. As the dog moves closer to the boundaries, the more shock he will feel. In the case of the IP method, the amount of shock is determined by $\mu$. A large value of $\mu$ gives the analytic center of the feasible region. As $\mu$ decreases and approaches 0, the optimal value is calculated by tracing out a central path.
+
+
 Simplify nonlinear constrained optimization problem using barrier methods (copy book)
 
 Let $g^({(k)})=∇f(x^{(k)}),F^{(k)}=∇^2 f(x^{(k)})$
