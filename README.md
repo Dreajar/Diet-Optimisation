@@ -15,7 +15,7 @@ Why did I start this project?
 
 Simplify nonlinear constrained optimization problem using barrier methods (copy book)
 
-Let $g^((k))=∇f(x^(k)),F^(k)=∇^2 f(x^(k))$
+Let $g^({(k)})=∇f(x^{(k)}),F^{(k)}=∇^2 f(x^(k))$
 - Gradient method: $x^(k+1)=x^(k)-α_k g^(k)$
     - Choice of α_k: fixed, exact line search, or backtracking line search
     - Pros: simple
