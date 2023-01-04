@@ -39,7 +39,7 @@ The terms $\frac{-r}{g_i(x)}$ are called the _boundary repulsion_ terms and forc
 1. We start with an initial interior feasible point $x^0$ and set $k:=1$.
 2. We use any unconstrained optimisation technique to find the minimum of the barrier function 
 ```math
-$B(x, r_k) = f(x) - r_k\sum_{i=1}^m \frac{1}{g_i(x)}$
+B(x, r_k) = f(x) - r_k\sum_{i=1}^m \frac{1}{g_i(x)}$
 ```
 3. Vary $r_k$, e.g., $r_k = 10^{4-k}$ and repeat the process until the current solution satisfies some stop criterion
 
@@ -59,7 +59,7 @@ Let $g^({(k)})=∇f(x^{(k)}),F^{(k)}=∇^2 f(x^{(k)})$
     - Cons: no convergence guarantee for smooth convex problems
 
 # Summary of BB method 
-Copy into github
+Define: $s^{(k-1)}:=x^{(k)}-x^{(k-1)}, y:=g^{(k)}-g^{(k-1)}, \alpha_k^1:=\frac{s^{(k-1)}^Ts^{(k-1)}}{s^{(k-1)}^Ty^{(k-1)}|
 
 # Results
 
