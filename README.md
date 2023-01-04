@@ -9,7 +9,7 @@ Background:
 	Python for webscraping
 	Matlab because Python can’t find gradients
   
-Goal: $minimize┬(x∈R^n )⁡〖f(x)〗$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
+Goal: $minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
 Methodology
 	Simplify nonlinear constrained optimization problem using barrier methods (copy book)
 Let g^((k))=∇f(x^((k) ) ),F^((k) )=∇^2 f(x^((k) ))
