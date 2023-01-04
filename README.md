@@ -20,7 +20,7 @@ Following linear programming (LP) terminology, we shall call such the initial se
 
 A major category of algorithms is formed by the _barrier and penalty function methods_. Here I shall briefly discuss the principle underlying the barrier function methods. Consider the convex programming problem 
 ```math
-minimize_{x∈R^n} f(x), such that g_i{(**x**)}<=0, i = 1,..., m
+minimize_{x∈R^n} f(x), such that g_i(<b>sample</b>)<=0, i = 1,..., m
 ```
 The idea is to convert this problem into a corresponding unconstrained problem with an optimal solution near that of the original problem.
 
