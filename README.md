@@ -43,7 +43,8 @@ The terms $\frac{-r}{g_i(x)}$ are called the _boundary repulsion_ terms and forc
 ```math
 B(x, r_k) = f(x) - r_k\sum_{i=1}^m \frac{1}{g_i(x)}$
 ```
-3. Vary $r_k$, e.g., $r_k = 10^{4-k}$ and repeat the process until the current solution satisfies some stop criterion
+3. Vary $r_k$, e.g., $r_k = 10^{1-k}$ and repeat the process until the current solution satisfies some stop criterion
+Note that the choice of ${{r_k}}^\infty_{k=1} = {{10^-k}}^\infty_{k=1} has been empirically proved to yield satisfactory results; a slower converging $r_k$ sequence may delay the convergence of the algorithm, while a faster sequence may cause numerical istability. (See Fiacco and McCormick (1968))
 
 However, with regards to Step 2, which optimisation technique should we choose?
 Our goal is as follows: $minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
@@ -75,7 +76,8 @@ y^{(k-1)}:=g^{(k)}-g^{(k-1)}
 At $k=0$, $x^{(k-1)}, g^{(k-1)}$ (and thus $s^{(k-1)}, y^{(k-1)}$) are undefined, so we apply 1 iteration of the standard gradient descent.  
 Then, we switch to the BB method at $k=1$
 
-# Results
+# Test #1
+I set \mu
 
 
 # Extensions
