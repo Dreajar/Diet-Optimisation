@@ -19,8 +19,9 @@ According to Prospect Medical (add hyperlink), the optimal diet should consist o
 
 I've tried eating only chicken breast for a week and hated it. Therefore, I will penalize repeated food choices with the formula
 ```math
-\sumC = \sum_{i=1}^n A_{food} * \frac{1.05^{x_i}-1}{0.05}
+\sum C = \sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}
 ```
+where $A_{food}$ is the amount of calories of food $i$, and $x_i$ is the number of portions of that food in my diet.
 Consider the nonlinear programming problem:
 ```math
 ```
