@@ -11,6 +11,21 @@ Why did I start this project?
 $minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
 
 # Description of problem
+According to Prospect Medical (add hyperlink), the optimal diet should consist of 50% carbohydrates, 20% protein, and 30% fat. Furthermore, one should consume around 30 grams of protein per meal. Therefore, the aim is of this project is to find the optimal combination of food items in a given menu that minimizes the difference of the ratios between the optimal diet and my diet. Furthermore, my diet should satisfy the following conditions:
+1. Total calories that I feel like I've eaten must be within 800 ~ 1200 (more on this later)
+2. Minimum of 30g protein
+3. Minimum of 80g carbs
+4. Minimum of 50g fat
+
+I've tried eating only chicken breast for a week and hated it. Therefore, I will penalize repeated food choices with the formula
+```math
+\sumC = \sum_{i=1}^n A_{food} * \frac{1.05^{x_i}-1}{0.05}
+```
+Consider the nonlinear programming problem:
+```math
+```
+$minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
+
 
 # Methodology
 
@@ -47,7 +62,7 @@ B(x, r_k) = f(x) - r_k\sum_{i=1}^m \frac{1}{g_i(x)}$
 
 Note that the choice of ${{r_k}}^\infty_{k=1} = {{10^-k}}^\infty_{k=1}$ has been empirically proved to yield satisfactory results; a slower converging $r_k$ sequence may delay the convergence of the algorithm, while a faster sequence may cause numerical istability. (See Fiacco and McCormick (1968))
 
-However, with regards to Step 2, which optimisation technique should we choose?
+Regarding Step 2, which optimisation technique should we choose?
 Our goal is as follows: $minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
 Let $g^({(k)})=∇f(x^{(k)}),F^{(k)}=∇^2 f(x^{(k)})$
 - Gradient method: $x^{(k+1)}=x^{(k)}-α_k g^{(k)}$
