@@ -109,9 +109,18 @@ At $k=0$, $x^{(k-1)}, g^{(k-1)}$ (and thus $s^{(k-1)}, y^{(k-1)}$) are undefined
 Then, we switch to the BB method at $k=1$
 
 # Problems
-I varied the value of $\mu$ 30 times but still got vectors with negative components. This is because my repetition penalty function encourages negative values, which pushes the optimal solution of the barrier solutions against the invisible fence. Therefore, using the concept of smooth maximums, I will change my 1st constraint as such:
+I varied the value of $\mu$ 30 times but still got vectors with negative components. This is because my repetition penalty function encourages negative values, which pushes the optimal solution of the barrier solutions against the invisible fence. Therefore, using the concept of smooth maximums, I will modify my constraint as such:
 ```math
 800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05} * 10^{-5} ln(e^{10^5x}+1)   \le1200
+```
+```math
+A[fat]x * * 10^{-5} ln(e^{10^5x}+1)\ge30
+```
+```math
+A[carbs]x * * 10^{-5} ln(e^{10^5x}+1)\ge80
+```
+```math
+A[carbs]x * * 10^{-5} ln(e^{10^5x}+1)\ge50
 ```
 My laptop takes ~10 minutes for each calculation, I have converted all analytic expression into 6 decimal point representations so my laptop doesn't explode.  
 _I tried using a sigmoid function_ $\sigma^{10}(x)$ _but I got negative values after 20 mins_
