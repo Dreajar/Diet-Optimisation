@@ -28,10 +28,13 @@ Let $A$ be the macronutrients of the menu items, and let $A'$ be formed by remov
 Let $r$ be the normalized vector formed from optimal ratio of fat/carbs/protein = 20/50/30
 Let $x$ be the column vector that describes the number of portions of each menu item in my diet
 ```math
-minimize_{x\in R^n}
+minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r||
 ```
-$minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
-
+subject to:
+1. 800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}\le1200
+2. A[fat]x\ge30
+3. A[carbs]x\ge80
+4. A[carbs]x\ge50
 
 # Methodology
 
