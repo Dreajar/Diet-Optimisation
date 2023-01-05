@@ -127,5 +127,6 @@ I set \mu
 3. Since all my optimisation problem was convex, I could use the BB method and guarantee a nonstrict global minimum. However, if I were to change/append nonconvex constraints, then I could not guarantee a gloabl minimum. To deal with that, I could add a nonmonotone line search. This would
     - Improve likelihood of global optimality
     - Improve convergence speed when a monotone scheme is forced to creep along the bottom of a narrow curved valley
+    
    However, doing so may still kill R-linear convergence. Further reading is needed to solve this problem.
 4. My current project takes in a given matrix in an excel file and calculates the optimal point. I can implement a python webscraper and make the program automatically calculate the optimal diet across different dining halls at each meal and return where and what I should eat.
