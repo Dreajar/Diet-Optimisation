@@ -115,7 +115,7 @@ I set \mu
 # Extensions
 1. My current stop criterion are arbitrary. I can implement a suitable stop criterion resulting from duality considerations.
 2. Since the objective was to minimize the norm of the difference vector, there exists a set of solutions all lying on some line within the feasible solution space. Given such a set, I should add another objective such that there is only 1 strict global optimal solution to make the problem more interesting.
-3. Since all my optimisation problem was convex, I could use the BB method and guarantee a nonstrict global minimum. However, if I were to change/append nonconvex constraints, then I could not guarantee a gloabl minimum. To deal with that, I could add a nonmonotone line search. This would
+3. Since my optimisation problem was convex, I could use the BB method and guarantee a nonstrict global minimum. However, if I were to change/append nonconvex constraints, then I could not guarantee a gloabl minimum. To deal with that, I could add a nonmonotone line search. This would
     - Improve likelihood of global optimality
     - Improve convergence speed when a monotone scheme is forced to creep along the bottom of a narrow curved valley
     
