@@ -13,6 +13,7 @@ I've tried eating only chicken breast for a week and hated it. Therefore, I will
 \sum C = \sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}
 ```
 where $A_{i}$ is the amount of calories of food $i$, and $x_i$ is the number of portions of that food in my diet.
+If the reader is not comfortable with this idea, then he should think of this constraint as a utility function that depeneds on calories and amount of the food item eaten.
 # Reformulation
 Given the above constraints,
 
@@ -49,7 +50,7 @@ Whereas unconstrained optimisation algorithms usually start from some initial po
 
 Following linear programming (LP) terminology, we shall call such the initial search a _Phase 1_ procedure and the process of finding an optimal point from the initial solution a _Phase 2_ procedure.
 
-A major category of algorithms is formed by the _barrier and penalty function methods_. Here I shall briefly discuss the principle underlying the barrier function methods. Consider the convex programming problem 
+A major category of algorithms is formed by the _barrier and penalty function methods_. Here I shall briefly discuss the principle underlying the barrier function methods. Consider the programming problem 
 ```math
 minimize_{x∈R^n} f(x)
 ```
@@ -124,12 +125,24 @@ A[carbs]x * 10^{-5} ln(e^{10^5x}+1)\ge50
 ```
 My laptop takes ~10 minutes for each calculation, I have converted all analytic expression into 6 decimal point representations so my laptop doesn't explode.  
 _I tried using a sigmoid function_ $\sigma^{10}(x)$ _but I got negative values after 20 mins_
+Also, I have replaced the objective function with 
+'''math
+minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r|| - \frac{A[cal]x}{1200}
+'''
+in order to convert the problem into a convex programming problem to save time and computational power.
+
 
 # Results
-Because I kept getting vectors with a negligible negative component (<-10^-4), I decdied on the following assumption: $\forall i, x_i = max{0,x_i}$ of the resulting point. While this doesn't adhere to my constraints, it follows the spirit of optimisation. My resulting vector is
+Because I kept getting vectors with a negligible negative component ($<-10^{-4}$), I decided to cut the project short with the following assumption: $\forall i, x_i = max{0,x_i}$ of the resulting point. While this doesn't adhere to my constraints, it follows the spirit of optimisation. My resulting vector is
 ```math
 [0, 0, 1.267307, 1.954471, 1.962365, 0, 0, 0, 0, 0, 0.935564, 0.727005, 0.504355, 0.623152, 0.109245]
 ```
+Now let us check the constraints:
+```math
+A[fat] = 76.997299
+A[carbs] = 173.370608
+A[protein] = 
+
 # Extensions
 1. My current stop criterion are arbitrary. I can implement a suitable stop criterion resulting from duality considerations.
 2. Since the objective was to minimize the norm of the difference vector, there exists a set of solutions all lying on some line within the feasible solution space. Given such a set, I should add another objective such that there is only 1 strict global optimal solution to make the problem more interesting.
