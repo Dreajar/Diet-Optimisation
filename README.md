@@ -131,6 +131,10 @@ Also, I have replaced the objective function with
 '''math
 minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r|| - \frac{A[cal]x}{1200}
 '''
+
+```math
+minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r||
+```
 in order to convert the problem into a convex programming problem to save time and computational power.
 
 
