@@ -125,6 +125,7 @@ A[carbs]x * 10^{-5} ln(e^{10^5x}+1)\ge50
 ```
 My laptop takes ~10 minutes for each calculation, I have converted all analytic expression into 6 decimal point representations so my laptop doesn't explode.  
 _I tried using a sigmoid function_ $\sigma^{10}(x)$ _but I got negative values after 20 mins_
+
 Also, I have replaced the objective function with 
 '''math
 minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r|| - \frac{A[cal]x}{1200}
@@ -133,7 +134,7 @@ in order to convert the problem into a convex programming problem to save time a
 
 
 # Results
-My resulting vector is
+The resulting vector is
 ```math
 [0.0142108, 0.00374653, 0.0275781, 2.01103, 2.00845, 0.00451246, 0.0105771, 0.00193119, 0.00490425, 0.0225939, 0.0208309, 0.0165289, 0.0131959, 0.0158611, 0.0120535]^T
 ```
