@@ -31,10 +31,18 @@ Let $x$ be the column vector that describes the number of portions of each menu 
 minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r||
 ```
 subject to:
-1. $800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}\le1200$
-2. $A[fat]x\ge30$
-3. $A[carbs]x\ge80$
-4. $A[carbs]x\ge50$
+```math
+800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}\le1200
+```
+```math
+A[fat]x\ge30
+```
+```math
+A[carbs]x\ge80
+```
+```math
+A[carbs]x\ge50
+```
 
 # Methodology
 
