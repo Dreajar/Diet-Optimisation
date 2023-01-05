@@ -12,13 +12,13 @@ I've tried eating only chicken breast for a week and hated it. Therefore, I will
 ```math
 \sum C = \sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}
 ```
-where $A_{food}$ is the amount of calories of food $i$, and $x_i$ is the number of portions of that food in my diet.
+where $A_{i}$ is the amount of calories of food $i$, and $x_i$ is the number of portions of that food in my diet.
 # Reformulation
 Given the above constraints,
 
 Let $A$ be the macronutrients of the menu items, and let $A'$ be formed by removing the row of calories
 
-Let $r$ be the normalized vector formed from optimal ratio of fat/carbs/protein = 20/50/30
+Let $r$ be the normalized vector formed from optimal ratio of fat/carbs/protein = 30/50/20
 
 Let $x$ be the column vector that describes the number of portions of each menu item in my diet
 
