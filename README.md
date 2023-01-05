@@ -24,6 +24,9 @@ I've tried eating only chicken breast for a week and hated it. Therefore, I will
 where $A_{food}$ is the amount of calories of food $i$, and $x_i$ is the number of portions of that food in my diet.
 # Reformulation
 Given the above constraints, consider the nonlinear programming problem:
+Let $A$ be the macronutrients of the menu items, and let $A'$ be formed by removing the row of calories
+Let $r$ be the normalized vector formed from optimal ratio of fat/carbs/protein = 20/50/30
+Let $x$ be the column vector that describes the number of portions of each menu item in my diet
 ```math
 minimize_{x\in R^n}
 ```
