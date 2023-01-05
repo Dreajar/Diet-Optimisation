@@ -28,7 +28,7 @@ minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r||
 ```
 subject to:
 ```math
-800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}\le1200
+800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}\le1700
 ```
 ```math
 A[fat]x\ge30
@@ -111,7 +111,7 @@ Then, we switch to the BB method at $k=1$
 # Problems
 I varied the value of $\mu$ 30 times but still got vectors with negative components. This is because my repetition penalty function encourages negative values, which pushes the optimal solution of the barrier solutions against the invisible fence. Therefore, using the concept of smooth maximums, I will modify my constraint as such:
 ```math
-800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05} * 10^{-5} ln(e^{10^5x}+1)   \le1200
+800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05} * 10^{-5} ln(e^{10^5x}+1)   \le1700
 ```
 ```math
 A[fat]x * 10^{-5} ln(e^{10^5x}+1)\ge30
@@ -125,7 +125,11 @@ A[carbs]x * 10^{-5} ln(e^{10^5x}+1)\ge50
 My laptop takes ~10 minutes for each calculation, I have converted all analytic expression into 6 decimal point representations so my laptop doesn't explode.  
 _I tried using a sigmoid function_ $\sigma^{10}(x)$ _but I got negative values after 20 mins_
 
-
+# Results
+Because I kept getting vectors with a negligible negative component (<-10^-4), I decdied on the following assumption: $\forall i, x_i = max{0,x_i}$ of the resulting point. While this doesn't adhere to my constraints, it follows the spirit of optimisation. My resulting vector is
+```math
+[0, 0, 1.267307, 1.954471, 1.962365, 0, 0, 0, 0, 0, 0.935564, 0.727005, 0.504355, 0.623152, 0.109245]
+```
 # Extensions
 1. My current stop criterion are arbitrary. I can implement a suitable stop criterion resulting from duality considerations.
 2. Since the objective was to minimize the norm of the difference vector, there exists a set of solutions all lying on some line within the feasible solution space. Given such a set, I should add another objective such that there is only 1 strict global optimal solution to make the problem more interesting.
