@@ -1,14 +1,5 @@
-# Diet-Optimisation
-
-Writing this right now. Gonna paste my Word doc in here. 
-Learn how to type math equations
-
 # Background: 
-
-Why did I start this project?
-
-# Goal: 
-$minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
+I took a graduate course in optimisation theory. I recently got into bodybuilding and want to know what I should eat in each dining hall. I wanted to learn MATLAB. Ka-Pow!
 
 # Description of problem
 According to Prospect Medical (add hyperlink), the optimal diet should consist of 50% carbohydrates, 20% protein, and 30% fat. Furthermore, one should consume around 30 grams of protein per meal. Therefore, the aim is of this project is to find the optimal combination of food items in a given menu that minimizes the difference of the ratios between the optimal diet and my diet. Furthermore, my diet should satisfy the following conditions:
