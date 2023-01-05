@@ -2,7 +2,7 @@
 I took a graduate course in optimisation theory. I recently got into bodybuilding and want to know what I should eat in each dining hall. I wanted to learn MATLAB. Ka-Pow!
 
 # Description of problem
-According to Prospect Medical (add hyperlink), the optimal diet should consist of 50% carbohydrates, 20% protein, and 30% fat. Furthermore, one should consume around 30 grams of protein per meal. Therefore, the aim is of this project is to find the optimal combination of food items in a given menu that minimizes the difference of the ratios between the optimal diet and my diet. Furthermore, my diet should satisfy the following conditions:
+According to the [National Library of Medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163457/), the optimal diet should consist of 50% carbohydrates, 20% protein, and 30% fat. Furthermore, one should consume around 30 grams of protein per meal. Therefore, the aim is of this project is to find the optimal combination of food items in a given menu that minimizes the difference of the ratios between the optimal diet and my diet. Furthermore, my diet should satisfy the following conditions:
 1. Total calories that I feel like I've eaten must be within 800 ~ 1200 (more on this later)
 2. Minimum of 30g protein
 3. Minimum of 80g carbs
