@@ -111,7 +111,7 @@ Then, we switch to the BB method at $k=1$
 # Problems
 I set varied the value of $\mu$ for 30 times but still got vectors with negative components. This is because my repetition penalty function encourages negative values, which pushes the optimal solution of the barrier solutions up the invisible fence. Therefore, I will change my 1st constraint as such:
 ```math
-800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05} * \frac{(1+1/e)^10}{(1+e^-x)^10}   \le1200
+800\le\sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05} * \frac{(1+\frac{1}{e})^{10}}{(1+e^{-x})^{10}}   \le1200
 ```
 
 
