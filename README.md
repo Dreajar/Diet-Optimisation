@@ -48,7 +48,10 @@ A[carbs]x\ge80
 ```math
 A[carbs]x\ge50
 ```
-
+```math
+\forall i, x_i \ge 0
+```
+_I forgot the last condition, so I had to spend an extra day redoing the entire project._
 # Methodology
 
 Whereas unconstrained optimisation algorithms usually start from some initial point, the situation differs in the constrained case. Most methods require an initial solution that is feasible, i.e., one that satisfies all given constraints. Such an initial point may be hard to find; furthermore, there may exist no feasible points. Thus, a number of methods require a preliminary search method that finds an initial feasible solution point, from which we can then optimise the solution.
