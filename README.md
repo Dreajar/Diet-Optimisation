@@ -80,7 +80,9 @@ B(x, r_k) = f(x) - r_k\sum_{i=1}^m \frac{1}{g_i(x)}$
 Note that the choice of ${(r_k)}^\infty_{k=1} = \{(10^{-k})}^\infty_{k=1}$ has been empirically proved to yield satisfactory results; a slower converging $r_k$ sequence may delay the convergence of the algorithm, while a faster sequence may cause numerical instability. (See Fiacco and McCormick (1968))
 
 Regarding Step 2, which optimisation technique should we choose?
+
 Our goal is as follows: $minimize_{x∈R^n} f(x)$, where $f(x)∈C^∞$, i.e., $f(x)$ is a smooth function
+
 Let $g^({(k)})=∇f(x^{(k)}),F^{(k)}=∇^2 f(x^{(k)})$
 - Gradient method: $x^{(k+1)}=x^{(k)}-α_k g^{(k)}$
     - Choice of α_k: fixed, exact line search, or backtracking line search
