@@ -13,7 +13,8 @@ I've tried eating only chicken breast for a week and hated it. Therefore, I will
 \sum C = \sum_{i=1}^n A_i * \frac{1.05^{x_i}-1}{0.05}
 ```
 where $A_{i}$ is the amount of calories of food $i$, and $x_i$ is the number of portions of that food in my diet.
-If the reader is not comfortable with this idea, then he should think of this constraint as a utility function that depeneds on calories and amount of the food item eaten.
+
+_If the reader is not comfortable with this idea, then he should think of this constraint as a utility function that depeneds on calories and amount of the food item eaten._
 # Reformulation
 Given the above constraints,
 
