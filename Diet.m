@@ -1,4 +1,4 @@
-A = readmatrix('C:\Users\lmail\source\repos\Finance\Diet\test_menu_nutrients.xlsx');
+A = readmatrix('');  % insert your own excel filepath
 digits(6);
 OPTIMAL_RATIO = [20 50 30];
 n_OPTIMAL_RATIO = OPTIMAL_RATIO / norm(OPTIMAL_RATIO);
