@@ -129,9 +129,11 @@ My laptop takes ~10 minutes for each calculation, so I have converted all analyt
 _I tried using a sigmoid function_ $\sigma^{10}(x)$ _but I got negative values after 20 mins_
 
 Also, I have added the following term to the objective function
+
 '''math
 minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r||
 '''
+
 in order to convert the problem into a convex programming problem to save time and computational power.
 
 
