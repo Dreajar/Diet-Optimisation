@@ -3,7 +3,7 @@ I took a graduate course in optimisation theory. I recently got into bodybuildin
 
 # Description of problem
 According to the [National Library of Medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163457/), the optimal diet should consist of 50% carbohydrates, 20% protein, and 30% fat. Furthermore, one should consume around 30 grams of protein per meal. Therefore, the aim is of this project is to find the optimal combination of food items in a given menu that minimizes the difference of the ratios between the optimal diet and my diet. Furthermore, my diet should satisfy the following conditions:
-1. Total calories that I feel like I've eaten must be within 800 ~ 1200 (more on this later)
+1. Total calories that I feel like I've eaten must be within 800 ~ 1200 (_If the reader is not comfortable with this idea, then he should think of this constraint as a utility function that depeneds on calories and amount of the food item eaten._)
 2. Minimum of 30g protein
 3. Minimum of 80g carbs
 4. Minimum of 50g fat
@@ -14,7 +14,6 @@ I've tried eating only chicken breast for a week and hated it. Therefore, I will
 ```
 where $A_{i}$ is the amount of calories of food $i$, and $x_i$ is the number of portions of that food in my diet.
 
-_If the reader is not comfortable with this idea, then he should think of this constraint as a utility function that depeneds on calories and amount of the food item eaten._
 # Reformulation
 Given the above constraints,
 
