@@ -130,9 +130,10 @@ _I tried using a sigmoid function_ $\sigma^{10}(x)$ _but I got negative values a
 
 Also, I have added the following term to the objective function
 
-'''math
+Consider the nonlinear programming problem:
+```math
 minimize_{x\in R^n} ||\frac{A'x}{||A'x||}-r||
-'''
+```
 
 in order to convert the problem into a convex programming problem to save time and computational power.
 
