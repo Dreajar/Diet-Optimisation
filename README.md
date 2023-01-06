@@ -1,5 +1,5 @@
 # Background: 
-I took a graduate course in optimisation theory. I recently got into bodybuilding and want to know what I should eat in each dining hall. I wanted to learn MATLAB. Ka-Pow!
+I took a graduate course in optimisation theory. I recently got into bodybuilding and want to know what I should eat in each dining hall. I wanted to learn MATLAB. I need projects on my resume. Это всё!
 
 # Description of problem
 According to the [National Library of Medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163457/), the optimal diet should consist of 50% carbohydrates, 20% protein, and 30% fat. Furthermore, one should consume around 30 grams of protein per meal. Therefore, the aim is of this project is to find the optimal combination of food items in a given menu that minimizes the difference of the ratios between the optimal diet and my diet. Furthermore, my diet should satisfy the following conditions:
@@ -45,7 +45,7 @@ A[carbs]x\ge50
 \forall i, x_i \ge 0
 ```
 _I forgot the last condition, so I had to spend an extra day redoing the entire project._
-# 2ology
+# Methodology
 
 Whereas unconstrained optimisation algorithms usually start from some initial point, the situation differs in the constrained case. Most methods require an initial solution that is feasible, i.e., one that satisfies all given constraints. Such an initial point may be hard to find; furthermore, there may exist no feasible points. Thus, a number of methods require a preliminary search method that finds an initial feasible solution point, from which we can then optimise the solution.
 
